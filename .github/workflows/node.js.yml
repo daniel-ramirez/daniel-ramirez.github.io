@@ -29,5 +29,5 @@ jobs:
     - run: git config user.email "danielfr1987@gmail.com"
     - run: git config user.name "Daniel Ramirez"
     - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run custom-deploy
+    - run: npm run predeploy
+    - run: npm run deploy
