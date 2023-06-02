@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: git remote set-url origin https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/daniel-ramirez/daniel-ramirez.github.io.git
+    - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/daniel-ramirez/daniel-ramirez.github.io.git
     - run: git config user.email "danielfr1987@gmail.com"
     - run: git config user.name "Daniel Ramirez"
     - run: npm ci
